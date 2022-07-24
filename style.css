@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mukta, sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #51557E;
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+main {
+  display: flex;
+  padding: 30px;
+}
+
+.content{
+  width: 70%;
+}
+
+.child-content {
+  border: 1px solid #51557E;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.child-content h3 {
+  margin-bottom: 10px;
+}
+
+.dialog {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #1B2430;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dialog * {
+  color: white;
+}
+
+.dialog p {
+  margin-bottom: 10px;
+}
+
+.book-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.book-item {
+  border: 1px solid #51557E;
+  padding: 10px;
+  border-radius: 5px;
+  width: 48%;
+}
+
+input {
+  padding: 5px 10px;
+}
+
+button {
+  background-color: #51557E;
+  color: #eee;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 40px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#keyword-input {
+  width: 50%;
+}
+
+aside {
+  border: 1px solid #51557E;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  width: 30%;
+  height: 100%;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+.form-group input[type='text'] {
+  width: 100%;
+}
+
+.form-group input[type='checkbox'] {
+  margin-left: 5px;
+}
+
+.form-group #submit-book {
+  width: 100%;
+}
+
+.form-group #submit-book #is-completed-field {
+  font-weight: bold;
+  color: #eee
+}
+
+.button-action {
+  width: 35%;
+  padding: 2px 0;
+  margin: 10px 5px 0 0;
+}
+
+.button-green {
+  background-color: #090;
+}
+
+.button-red {
+  background-color: #900;
+}

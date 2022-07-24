@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dialog">
+      <h4>Hapus Data</h4>
+      <p>Apakah Anda yakin ingin menghapusnya ?</p>
+      <input type="hidden" id="book-dialog-id">
+      <button class="button-green button-confirm">Ya</button>
+      <button class="button-red button-cancel">Tidak</button>
+    </div>
+    <header>
+      <h1>Bookshelf Apps</h1>
+    </header>
+    <main>
+      <div class="content">
+        <div class="child-content">
+          <h2>Cari Buku</h2>
+          <form id="form-search-book">
+            <input type="text" id="keyword-input" name="keyword" placeholder="Masukkan judul buku" autocomplete="off">
+            <button type="submit" id="submit-keyword">Cari</button>
+          </form>
+        </div>
+        <div class="child-content">
+          <h3>Belum Selesai Dibaca</h3>
+          <div class="book-list" id="books-uncompleted"></div>
+        </div>
+        <div class="child-content">
+          <h3>Selesai Dibaca</h3>
+          <div class="book-list" id="books-completed"></div>
+        </div>
+      </div>
+      <aside>
+        <h3>Masukkan buku baru</h3>
+        <form id="form-input-book">
+          <div class="form-group">
+            <label for="title">Judul</label><br/>
+            <input type="text" id="title" name="title" placeholder="Masukkan judul buku" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="author">Penulis</label><br/>
+            <input type="text" id="author" name="author" placeholder="Masukkan judul buku" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="year">Tahun</label><br/>
+            <input type="text" id="year" name="year" placeholder="Masukkan judul buku" maxlength="4" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="isComplete">Selesai dibaca</label>
+            <input type="checkbox" id="isComplete" name="isComplete">
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit-book">Masukkan buku ke rak <span id="is-completed-field">Belum Selesai Dibaca</span></button>
+          </div>
+        </form>
+      </aside>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
